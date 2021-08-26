@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align-last: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mid-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* hader-work-start */
+
+.headfer-section {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.heaer-logo {
+    width: 30%;
+}
+
+.heaer-menu {
+    width: 54%;
+}
+
+.heaer-button {
+    width: 14%;
+}
+
+
+.heaer-logo a {}
+
+.heaer-logo a span {
+    color: #010101;
+    margin-left: 10px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.heaer-logo img {
+    width: 62px;
+    float: left;
+    
+}
+
+.primary-menu {}
+
+.primary-menu ul {}
+
+.primary-menu ul li {
+    display: inline-block;
+}
+
+.primary-menu ul li a {
+    display: block;
+    padding: 0 20px;
+    color: #000;
+    font-weight: ;
+    line-height: 58px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.primary-menu ul li a:hover{}
+
+
+.heaer-button  .header-btn {
+    border: 2px solid #6278df;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 8px;
+    color: #6278df !important;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* drop-down-menu */
+
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 120%;
+    background: #fff;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 0.5s;
+    z-index: 9999;
+
+}
+.primary-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+} 
+
+.primary-menu ul li ul li{}
+
+/* baner-section */
+
+.banner-section {
+	background: url(https://i.ibb.co/PmHFfFy/02.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 200px 0;
+	color: #fff;
+	position: relative;
+	z-index: 9;
+    margin-top: 70px;
+	
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+.banner-content{}
+.banner-content h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+.banner-content h2 {
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+.default-btn {
+	color: #7d7d7d;
+	padding: 20px 30px;
+	background: #fff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 5px;
+	margin-right: 5px;
+    border-radius: 10px;
+    transition:.4s;
+}
+.default-btn:hover{
+    background: #6278df;
+    color: #fff;
+}
+
+/*  Banner Section  */
+.banner-bottom{
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+
+/*  Banner Section  */
+.banner-bottom{
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+.video-left{
+    width: 48%;
+}
+.video-content-right{
+    width: 48%;
+}
+.video-content-right h3 {
+    font-size: 51px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.video-content-right p {
+    color: #767676;
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+.service-section{
+    background: #fff;
+    padding: 100px 0;
+}
+
+.section-title h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+.section-title p {
+    color: #767676;
+    font-size: 26px;
+}
+
+/*  Serice Item  */
+.services-items {
+    margin-top: 90px;
+}
+.service-box {
+    width: 31.3%;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1);
+    margin-right: 2%;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.s-icon {
+    width: 60px;
+    float: left;
+    min-height: 168px;
+    font-size: 45px;
+    color: #6278df;
+    margin-right: 10px;
+}
+.s-content {
+    margin-top: 8px;
+}
+.s-content h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.s-content p {
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.6em;
+}
